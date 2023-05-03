@@ -32,4 +32,4 @@ class AsyncRateLimiter(RateLimiter):
                     await asyncio.sleep(sleeptime)
             return self
 
-    __aexit__ = asyncio.coroutine(RateLimiter.__exit__)
+    __aexit__ = asyncio.coroutine(RateLimiter.__exit__) if hasattr(asyncio, 'coroutine') else RateLimiter.__exit__
