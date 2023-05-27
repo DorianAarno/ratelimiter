@@ -42,7 +42,7 @@ setup(
     description=DESCRIPTION,
     author=AUTHOR,
     author_email=EMAIL,
-    url='https://github.com/RazerM/ratelimiter',
+    url='https://github.com/DorianAarno/ratelimiter',
     packages=['ratelimiter'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
